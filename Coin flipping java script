@@ -1,0 +1,24 @@
+var coin=document.getElementById('coin');
+var button=document.getElementById('button');
+var result=document.getElementbyId('result');
+var headscounter=document.getElementbyId('Heads');
+var tailscounter=document.getElementById("Tails");
+var heads=0
+var tails=0
+function cointoss(){
+  var x=math.floor(math.random()*2);
+  if (x===0){
+    coin.innerhtml='<img class="heads animate-coin'  src="https://upload.wikimedia.org/wikipedia/en/5/52/British_fifty_pence_coin_2015_obverse.png"/>';
+    heads+=1;
+    result.innerhtml='<h2>You got head</h2>';
+    headscounter.innerhtml='<h3>Number of heads:<span>'+heads+'</span></h3>';}
+    else{
+      coin.innerhtml='<img class="tails animate-coin" src="https://upload.wikimedia.org/wikipedia/en/d/d8/British_fifty_pence_coin_2015_reverse.png"/>';
+      tail+=1
+      result.innerhtml='<h2>You got tail</h2>'
+      tailscounter.innerhtml='<h3>Number of tails:<span>'+tails+'</span></h3>'}
+}
+button.onclick=function(){
+  cointoss();
+  featurecoin.remove();
+}
